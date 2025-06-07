@@ -1,0 +1,62 @@
+#collegeBanner {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block; 
+}
+
+.nav-buttons {
+      flex-wrap: wrap;
+    }
+    .nav-buttons .btn {
+      margin: 0.25rem 0.5rem 0.25rem 0; /* spacing around buttons */
+    }
+
+
+
+    /* From Uiverse.io by zjssun */ 
+#btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+
+nav.fixed-top {
+      height: 56px; /* default Bootstrap navbar height */
+    }
+
+    body {
+      padding-top: 56px; /* same as navbar height */
+    }
+
+    #collegeBanner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #main-div{
+        position: sticky;
+    }
+

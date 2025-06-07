@@ -1,0 +1,40 @@
+.abstract-section {
+  max-width: 900px;
+  margin: 400px auto;
+  padding: 25px;
+  background-color: #f4faff;
+  border-left: 8px solid #198754;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.abstract-section h2 {
+  color: #198754;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.abstract-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.abstract-list li::before {
+  content: "✅";
+  color: #198754;
+  margin-right: 10px;
+}
+
+.abstract-list .sub-list {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.abstract-list .sub-list li::before {
+  content: "";
+  margin-right: 0;
+}
