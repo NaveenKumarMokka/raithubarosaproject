@@ -30,6 +30,91 @@
       line-height: 1.7;
       margin-bottom: 16px;
     }
+
+
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.contributors-section {
+  background: linear-gradient(135deg, #e0f7fa, #caffbf);
+  padding: 50px 20px;
+  border-top: 4px solid #74c69d;
+}
+
+.contributors-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contributors-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contributors-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1b4332;
+  position: relative;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contributors-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #52b788;
+  border-radius: 2px;
+  animation: expandLine 1s ease forwards;
+}
+
+.students {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: fadeInStudents 1.2s ease;
+}
+
+.guide-heading {
+  font-size: 1.3rem;
+  color: #2d6a4f;
+  margin-top: 20px;
+  animation: fadeInGuide 1.4s ease;
+}
+
+.guide {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+  animation: fadeInGuide 1.6s ease;
+}
+
+/* Custom animations */
+@keyframes expandLine {
+  from { width: 0; opacity: 0; }
+  to { width: 60px; opacity: 1; }
+}
+
+@keyframes fadeInStudents {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInGuide {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
 <body>
@@ -42,16 +127,41 @@
     <a href="./index.html"><button class="btn btn-outline-light me-2" type="button" id="homeBtn" >HOME</button></a>
 <a href="./abstract.html"><button class="btn btn-outline-light me-2" type="button" id="abstractBtn">ABSTRACT</button></a>
 <a href="./introduction.html"> <button class="btn btn-outline-light me-2" type="button">INTRODUCTION</button></a>
- <a href="./questionnaire.html"></a>  <button class="btn btn-outline-light me-2" type="button">QUESTIONNAIRE</button>
+ <a href="./questionnaire.html">  <button class="btn btn-outline-light me-2" type="button">QUESTIONNAIRE</button></a>
  <a href="./serveyData.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY DATA</button></a> 
  <a href="./serveyPhotos.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY PHOTOS</button></a> 
   <a href="./conclusion.html">     <button class="btn btn-outline-light me-2" type="button">CONCLUSION</button></a>
-  <a href="./TeamMembers.html"></a> <button class="btn btn-outline-light me-2" type="button">TEAM</button>   
+  <a href="./TeamMembers.html"> <button class="btn btn-outline-light me-2" type="button">TEAM</button> </a>  
     
     
     </div>
     </nav>
   </div>
+
+
+
+
+
+  <!-- Contributors Section -->
+<section class="contributors-section my-5">
+  <div class="container">
+    <div class="contributors-box animate__animated animate__fadeInUp">
+      <h2 class="contributors-title">Project By</h2>
+      <p class="students">
+        <strong>B. PALLAVI</strong> (232U1A3308)<br>
+        <strong>A. AKHILA</strong> (232U1A3304)
+      </p>
+      <hr>
+      <h3 class="guide-heading">Under the Esteemed Guidance Of</h3>
+      <p class="guide">
+        <strong>U. SATYANARAYANA</strong>, M.Tech (PhD)<br>
+        Assistant Professor<br>
+        Department of Computer Science & Engineering (AI & ML)
+      </p>
+    </div>
+  </div>
+</section>
+
 
   
   <!-- Scripts -->

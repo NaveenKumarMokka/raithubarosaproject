@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <style>
+    /* Optional: Extra styling for the introduction box */
+    .intro-section {
+      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+    }
+
+    .intro-section h2 {
+      color: #2d6a4f;
+      border-bottom: 2px solid #74c69d;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      text-align: justify;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.conclusion-section {
+  background: linear-gradient(to right, #d8f3dc, #b7e4c7);
+  padding: 60px 0;
+}
+
+.conclusion-box {
+  background: white;
+  padding: 30px;
+  border-left: 8px solid #40916c;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conclusion-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.conclusion-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.conclusion-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: #74c69d;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+  animation: slideIn 1s ease forwards;
+}
+
+.conclusion-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #343a40;
+  text-align: justify;
+  animation: fadeInText 1.2s ease-in;
+}
+
+/* Custom Animations */
+@keyframes slideIn {
+  0% { width: 0; opacity: 0; }
+  100% { width: 60px; opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Banner + Navbar -->
+  <div id="bannerWrapper">
+    <img src="./assets/gist-l_ogo-pica.png" alt="College Banner" id="collegeBanner">
+    <nav class="bg-primary">
+      <div class="container d-flex flex-wrap justify-content-start nav-buttons py-2">
+    <a href="./index.html"><button class="btn btn-outline-light me-2" type="button" id="homeBtn" >HOME</button></a>
+<a href="./abstract.html"><button class="btn btn-outline-light me-2" type="button" id="abstractBtn">ABSTRACT</button></a>
+<a href="./introduction.html"> <button class="btn btn-outline-light me-2" type="button">INTRODUCTION</button></a>
+ <a href="./questionnaire.html">  <button class="btn btn-outline-light me-2" type="button">QUESTIONNAIRE</button></a>
+ <a href="./serveyData.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY DATA</button></a> 
+ <a href="./serveyPhotos.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY PHOTOS</button></a> 
+  <a href="./conclusion.html">     <button class="btn btn-outline-light me-2" type="button">CONCLUSION</button></a>
+  <a href="./TeamMembers.html"> <button class="btn btn-outline-light me-2" type="button">TEAM</button> </a>  
+    
+    
+    </div>
+    </nav>
+  </div>
+
+
+<!-- Animated Conclusion Section -->
+<section class="conclusion-section my-5">
+  <div class="container">
+    <div class="conclusion-box shadow rounded animate__animated animate__fadeInUp">
+      <h2 class="conclusion-title">CONCLUSION</h2>
+      <p>
+        Based on the survey data, a total of <strong>50</strong> people were surveyed. Out of them, <strong>35 people (70%)</strong> are eligible for the <strong>Raithu Bharosa Scheme</strong>, while <strong>15 people (30%)</strong> are not eligible.
+      </p>
+      <p>
+        This indicates that a significant majority of the surveyed population qualifies for the scheme, suggesting that it is benefiting a large portion of the targeted group. Further analysis could be done to understand the reasons behind ineligibility for the remaining individuals.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+</body>
+</html>
