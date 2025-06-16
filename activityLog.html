@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <style>
+    /* Optional: Extra styling for the introduction box */
+    .intro-section {
+      background-color: #ffffff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+    }
+
+    .intro-section h2 {
+      color: #2d6a4f;
+      border-bottom: 2px solid #74c69d;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      text-align: justify;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Banner + Navbar -->
+  <div id="bannerWrapper">
+    <img src="./assets/gist-l_ogo-pica.png" alt="College Banner" id="collegeBanner">
+    <nav class="bg-primary">
+      <div class="container d-flex flex-wrap justify-content-start nav-buttons py-2">
+<a href="./index.html"><button class="btn btn-outline-light me-2" type="button" id="homeBtn" >HOME</button></a>
+<a href="./abstract.html"><button class="btn btn-outline-light me-2" type="button" id="abstractBtn">ABSTRACT</button></a>
+<a href="./introduction.html"> <button class="btn btn-outline-light me-2" type="button">INTRODUCTION</button></a>
+ <a href="./questionnaire.html">  <button class="btn btn-outline-light me-2" type="button">QUESTIONNAIRE</button></a>
+ <a href="./serveyData.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY DATA</button></a> 
+ <a href="./serveyPhotos.html">  <button class="btn btn-outline-light me-2" type="button">SURVEY PHOTOS</button></a> 
+  <a href="./conclusion.html">     <button class="btn btn-outline-light me-2" type="button">CONCLUSION</button></a>
+  <a href="./activityLog.html"> <button class="btn btn-outline-light me-2" type="button">ACTIVITY LOG</button></a>
+
+  <a href="./TeamMembers.html"> <button class="btn btn-outline-light me-2" type="button">TEAM</button></a>
+        
+      </div>
+    </nav>
+  </div>
+<div class="intro-section">
+  <h2>Consolidated Activity Log</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped align-middle text-center">
+      <thead class="table-success">
+        <tr>
+          <th scope="col">WEEK</th>
+          <th scope="col">ACTIVITY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Week-1</td><td>Problem identification and discussion</td></tr>
+        <tr><td>Week-2</td><td>Conducting Survey</td></tr>
+        <tr><td>Week-3</td><td>Preparation of documentation and PPT</td></tr>
+        <tr><td>Week-4</td><td>Learning required technology</td></tr>
+        <tr><td>Week-5</td><td>Learning required technology</td></tr>
+        <tr><td>Week-6</td><td>Implementation of project</td></tr>
+        <tr><td>Week-7</td><td>Implementation of project</td></tr>
+        <tr><td>Week-8</td><td>Preparation of complete documentation</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- Next Button -->
+<div class="text-end mt-4 me-4">
+  <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#week1Modal">
+    Next →
+  </button>
+</div>
+
+</div>
+
+
+<!-- Week-1 Detailed Report Modal -->
+<div class="modal fade" id="week1Modal" tabindex="-1" aria-labelledby="week1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="week1ModalLabel">Detailed Report - Week 1</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Week-1:</strong> Project identification and discussion</p>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover table-striped text-center align-middle">
+            <thead class="table-info">
+              <tr>
+                <th>DAY</th>
+                <th>ACTIVITY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Day-1</td><td>Problem identification and discussion</td></tr>
+              <tr><td>Day-2</td><td>Selection of area and preparing questionnaire</td></tr>
+              <tr><td>Day-3</td><td>Conducting survey and collecting authentic data</td></tr>
+              <tr><td>Day-4</td><td>Collecting data and taking signatures of people</td></tr>
+              <tr><td>Day-5</td><td>Taking Geotagged photos while doing the survey</td></tr>
+              <tr><td>Day-6</td><td>Obtaining Gram Sachivalayam letter</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+</body>
+</html>
